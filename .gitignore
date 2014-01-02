@@ -31,3 +31,4 @@ cover
 
 .virtualenv/
 __pycache__
+.idea
