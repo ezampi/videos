@@ -34,3 +34,4 @@ cover
 __pycache__
 .idea
 *.sublime*
+*.sqlite3
