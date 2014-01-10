@@ -1,3 +1,5 @@
+import os
+from django.utils.translation import ugettext_lazy as _
 """
 Django settings for videos project.
 
@@ -9,8 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(__file__)
 
 
 # Quick-start development settings - unsuitable for production
@@ -31,24 +32,35 @@ ALLOWED_HOSTS = ['.localhost']
 
 INSTALLED_APPS = (
     # django
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # terceiros
+    'grappelli',
+    'django.contrib.admin',
+    'south',        # migração de banco de dados
+
     # aplicações
     'core',
 )
 
 MIDDLEWARE_CLASSES = (
+    # otimização
+    'django.middleware.gzip.GZipMiddleware',
+
+    # django
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # internacionalização
+    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'urls'
@@ -85,7 +97,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
 # templates
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
+)
+
+
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('pt-BR', _('Brazilian Portuguese')),
 )
