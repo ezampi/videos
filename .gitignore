@@ -29,6 +29,8 @@ docs/tmp
 docs/_build
 cover
 
+# customizado
 .virtualenv/
 __pycache__
 .idea
+*.sublime*
