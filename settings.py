@@ -38,10 +38,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # terceiros
+    # extras
     'grappelli',
     'django.contrib.admin',
-    'south',        # migração de banco de dados
+    'south',           # migração de banco de dados
+
 
     # aplicações
     'core',

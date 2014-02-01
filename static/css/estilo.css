@@ -1,155 +1,95 @@
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-body {
-  line-height: 1;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+.topo {
+  min-height: 62px;
+  background-color: #ffffff;
   display: block;
+  border-bottom: 1px solid #fafafa;
+  box-shadow: 0px 1px 4px #515172;
 }
-nav ul {
-  list-style: none;
+.topo .logotipo {
+  margin: 15px 0 0 0;
 }
-blockquote,
-q {
-  quotes: none;
+.topo .menu-principal {
+  margin: 15px 0 0 20px;
+  font-size: 13px;
+  font-size: 0.8125em;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+.topo #buscar,
+.topo #login {
+  margin: 15px 5px 0 0;
 }
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+.topo #buscar button,
+.topo #login button {
+  width: 70px;
 }
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none;
+.conteudo {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
 }
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
+.conteudo .player-video .palco_sobreposicao {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.19)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#30000000', GradientType=0);
+  /* IE6-9 */
 }
-del {
-  text-decoration: line-through;
+.conteudo .player-video .palco,
+.conteudo .player-video .info {
+  position: relative;
 }
-abbr[title],
-dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
+.conteudo .player-video .palco {
+  background: #dcdce6;
+  padding: 55px 0 45px 0;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.conteudo .player-video .palco .video {
+  padding: 0 !important;
+  border: solid 2px #ffffff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: #000000;
+  height: 450px;
 }
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
+.conteudo .player-video .info {
+  margin-top: -45px;
+  width: 100%;
 }
-input,
-select {
-  vertical-align: middle;
+.conteudo .player-video .info .txt,
+.conteudo .player-video .info .acessos {
+  min-height: 50px;
 }
-header {
-  height: 62px;
-  background-color: #fff;
-  display: block;
+.conteudo .player-video .info .txt {
+  padding: 10px 30px 70px;
+  background: #ffffff;
+}
+.conteudo .player-video .info .txt .titulo h1,
+.conteudo .player-video .info .txt .titulo h2 {
+  margin: 0px;
+  padding: 2px 0px;
+  font-weight: bolder;
+  font-family: 'Open Sans Condensed', sans-serif, Helvetica, arial, freesans, clean, sans-serif;
+}
+.conteudo .player-video .info .txt .titulo h1 {
+  padding-top: 15px;
+  color: #26323e;
+  font-size: 28px;
+  font-size: 1.75em;
+}
+.conteudo .player-video .info .txt .titulo h2 {
+  color: #ff0000;
+  font-size: 17px;
+  font-size: 1.0625em;
+}
+.conteudo .player-video .info .txt p {
+  padding-top: 20px;
+}
+.conteudo .player-video .info .acessos {
+  background: #ffffff;
 }
