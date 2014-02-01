@@ -32,7 +32,7 @@ cover
 # customizado
 .virtualenv/
 __pycache__
-.idea
+.idea*
 *.sublime*
 *.sqlite3
 .coverage
