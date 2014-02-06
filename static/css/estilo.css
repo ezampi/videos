@@ -21,35 +21,23 @@
 .topo #login button {
   width: 70px;
 }
-.conteudo {
+.content {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: 400;
+  height: 100%;
 }
-.conteudo .player-video .palco_sobreposicao {
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.19)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#30000000', GradientType=0);
-  /* IE6-9 */
-}
-.conteudo .player-video .palco,
-.conteudo .player-video .info {
+.content .player-video .stage-base {
   position: relative;
 }
-.conteudo .player-video .palco {
+.content .player-video .stage-base .stage,
+.content .player-video .stage-base .info {
+  position: relative;
+}
+.content .player-video .stage-base .stage {
   background: #dcdce6;
   padding: 55px 0 45px 0;
 }
-.conteudo .player-video .palco .video {
+.content .player-video .stage-base .stage .video {
   padding: 0 !important;
   border: solid 2px #ffffff;
   border-top-left-radius: 3px;
@@ -57,39 +45,39 @@
   background: #000000;
   height: 450px;
 }
-.conteudo .player-video .info {
+.content .player-video .info {
   margin-top: -45px;
   width: 100%;
 }
-.conteudo .player-video .info .txt,
-.conteudo .player-video .info .acessos {
+.content .player-video .info .info-base {
+  background: #ffffff;
+  height: 100%;
+}
+.content .player-video .info .info-base .txt,
+.content .player-video .info .info-base .extras {
   min-height: 50px;
 }
-.conteudo .player-video .info .txt {
+.content .player-video .info .info-base .txt {
   padding: 10px 30px 70px;
-  background: #ffffff;
 }
-.conteudo .player-video .info .txt .titulo h1,
-.conteudo .player-video .info .txt .titulo h2 {
+.content .player-video .info .info-base .txt .title h1,
+.content .player-video .info .info-base .txt .title h2 {
   margin: 0px;
   padding: 2px 0px;
   font-weight: bolder;
   font-family: 'Open Sans Condensed', sans-serif, Helvetica, arial, freesans, clean, sans-serif;
 }
-.conteudo .player-video .info .txt .titulo h1 {
+.content .player-video .info .info-base .txt .title h1 {
   padding-top: 15px;
   color: #26323e;
   font-size: 28px;
   font-size: 1.75em;
 }
-.conteudo .player-video .info .txt .titulo h2 {
+.content .player-video .info .info-base .txt .title h2 {
   color: #ff0000;
-  font-size: 17px;
-  font-size: 1.0625em;
+  font-size: 20px;
+  font-size: 1.25em;
 }
-.conteudo .player-video .info .txt p {
+.content .player-video .info .info-base .txt p {
   padding-top: 20px;
-}
-.conteudo .player-video .info .acessos {
-  background: #ffffff;
 }

@@ -41,8 +41,8 @@ INSTALLED_APPS = (
     # extras
     'grappelli',
     'django.contrib.admin',
-    'south',           # migração de banco de dados
-
+    'south',                # migração de banco de dados
+    'django_extensions',    # extras
 
     # aplicações
     'core',

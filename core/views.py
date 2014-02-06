@@ -9,9 +9,12 @@ def list_videos(request):
 def player(request, slug):
     return render(request,'core/player.html', {
                              'video': {
-                                "titulo": "As melhores palestras estão aqui.",
-                                "subtitulo" : "subtitulo",
-                                "descricao_curta" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, eos, voluptatibus tenetur modi velit quae laboriosam autem voluptas iusto vitae nesciunt tempora possimus quaerat. Explicabo, quaerat rerum amet fugiat dolore.",
-                                "descricao" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, eos, voluptatibus tenetur modi velit quae laboriosam autem voluptas iusto vitae nesciunt tempora possimus quaerat. Explicabo, quaerat rerum amet fugiat dolore." * 20
+                                "title": "Titulo do video",
+                                "category" : "subtitulo",
+                                "short_description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, eos, voluptatibus tenetur modi velit quae laboriosam autem voluptas iusto vitae nesciunt tempora possimus quaerat. Explicabo, quaerat rerum amet fugiat dolore.",
+                                "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, eos, voluptatibus tenetur modi velit quae laboriosam autem voluptas iusto vitae nesciunt tempora possimus quaerat. Explicabo, quaerat rerum amet fugiat dolore." * 20
+                             },
+                             'video_statics' : {
+                                "views": 1,
                              }
                           })
